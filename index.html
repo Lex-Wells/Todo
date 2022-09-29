@@ -1,1 +1,154 @@
-<h1>To DO LIST</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+
+   
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
+    
+
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./script.js"></script>
+    
+</head>
+<body>
+    <div class="banner-img">
+    <!-- <img src="./assets/bg-desktop-dark.jpg"/> -->
+    </div>
+<div class="container">
+    <div class="header-elements">
+        <div class="header">
+            <h1>To Do List</h1>
+        </div>
+        <div class="sun-icon">
+            <img src="./assets/icon-sun.svg">
+        </div>
+    </div>
+        <div class="header-actions">
+            <div class="check">
+                <div class="check-mark">
+        </div>
+    </div>
+    <div class="new-input">
+    <form id="submitbutt" onsubmit="addToList(event)">
+            <input type="text"
+                    id="input-Text-id"
+                    class="input-text"
+                    placeholder="What do you need to do?"/>
+            <!-- <input type="file"
+                    accept="image/jpeg, image/png"
+                    id="image_upload"
+                    name="image_upload"
+                    onchange="showPreview(event)"
+                    style="display: none; visibility:none;">
+                        <label id="imageAddIcon" for="image_upload"><span class="material-icons-round">
+                            add
+                            </span>
+                            </label> -->
+            <!-- <input type="submit"
+                    value="Add"> -->
+        </form>
+        </div>
+    
+    </div> 
+    <!-- <div  class="image-preview" id="imagePreviewDiv" >
+        <img src="" id="image-preview-pic">
+        <span class="image-preview-text">Upload Image</span>
+        <div class="delete-button">
+            <button >delete-button
+            </button>
+        </div>
+    </div> -->
+    <div class="bottom-added-list">
+        <div class="to-do-list-add">
+            <div class="to-do-item">
+                <div class="check">
+                    <div class="check-mark">
+                        <img src="./assets/icon-check.svg">
+                    </div>
+                </div>
+                
+                <div class="todo-text">
+                    This be some text
+                </div>
+                <div class="down-icon">
+                <span class="material-icons-round">
+                    expand_more
+                    </span>
+                </div>
+            </div>
+           
+            <div class="to-do-item">
+                <div class="check">
+                    <div class="check-mark">
+                        <img src="./assets/icon-check.svg">
+                    </div>
+                </div>
+                <div class="todo-text">
+                    This be some text
+                </div>
+                <div class="down-icon">
+                <span class="material-icons-round">
+                    expand_more
+                    </span>
+                 </div>                    
+            </div>
+            <div class="to-do-item">
+                <div class="check">
+                    <div class="check-mark">
+                        <img src="./assets/icon-check.svg">
+                    </div>
+                </div>
+                <div class="todo-text">
+                    This be some text
+                </div> 
+                <div class="down-icon">
+                <span class="material-icons-round">
+                    expand_more
+                    </span>
+                </div>                     
+            </div>
+
+        </div>
+        <div class="to-do-list-edits">
+            <div class="remaining-items">
+                4 items
+            </div>
+            <div class="items-status">
+                <span>All</span>
+                <span>Active</span>
+                <span>Completed</span>
+            </div>
+            <div class="clear-items">
+                Clear Completed Tasks
+            </div>
+        </div>
+
+    </div>
+    <div class="quote-section">
+        <div class="quote-of-day">Daily Quote:</div>
+        <div class="quote">
+
+        </div>
+
+    </div>
+
+    </div>
+
+    
+</div>
+</body>
+
+
+</html>
